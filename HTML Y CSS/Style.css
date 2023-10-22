@@ -1,4 +1,12 @@
-//CSS PARA LA PAGINA DE LOGIN
+/* CSS PARA INFORMACION DEL RESTAURABTE*/
+
+
+
+
+
+
+
+/*CSS PARA LA PAGINA DE LOGIN^*/
 body {
     background: #F7E1AE;
     margin: 100px auto 212px auto;
@@ -105,11 +113,10 @@ header {
     margin-right: 6px;
 }
 
-//FIN DEL CSS DE PAGINA DE LOGIN
+/*FIN DEL CSS DE PAGINA DE LOGIN*/
 
 
-//CSS PARA LA PAGINA DE REGISTRO
-
+/*CSS PARA LA PAGINA DE REGISTRO*/
 body {
     background: #F7E1AE;
     padding: 100px 428px 212px 428px; 
@@ -209,4 +216,4 @@ header {
     margin-right: 6px;
 }
 
-//FIN DEL CSS DEL REGISTRO
+/*FIN DEL CSS DEL REGISTRO*/
