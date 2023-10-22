@@ -1,0 +1,105 @@
+body {
+    background: #F7E1AE;
+    margin: 100px auto 212px auto;
+}
+
+.deco {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 46px;
+    background-color: #FFF8D6;
+    border: 1px solid #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Yellowtail;
+    
+
+}
+
+@font-face {
+    font-family: 'Yellowtail';
+    src: url(Yellowtail-Regular.ttf) format('woff2'),
+         url(Yellowtail-Regular.ttf) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(WorkSans-VariableFont_wght.ttf) format('woff2'),
+         url(WorkSans-VariableFont_wght.ttf) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Squada One';
+    src: url(SquadaOne-Regular.ttf) format('woff2'),
+         url(SquadaOne-Regular.ttf) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cuadro {
+    border: 1px solid #333;
+    padding: 20px;
+    background-color: #ffffff;
+    width: 490px;
+    margin: 0 auto;
+}
+
+.cuadro span {
+    display: inline;
+    margin-left: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.cuadro form {
+    margin-top: 20px;
+    margin-left: 52px;
+}
+
+.cuadro form label {
+    margin-bottom: 11px;
+    margin-right: 41px;
+    font-size: 18px;
+    font-weight:normal;
+}
+
+.cuadro form input {
+    margin-bottom: 7.5px;
+    display: block;
+    width: 327px;
+    margin-left: 11px;
+}
+
+.cuadro button{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-right: 43px;
+    font-family: Squada One;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    background-color: #F7E1AE;
+    border-color: #F7E1AE;
+}
+.color:hover {
+    background-color: #e3c379;
+    border-color: #F7E1AE;
+    color: #000; /* Cambia el color del texto al que desees, por ejemplo, negro (#000) */
+}
+
+
+
+.cuadro #flecha {
+    width: 56px;
+    margin-right: 6px;
+}
