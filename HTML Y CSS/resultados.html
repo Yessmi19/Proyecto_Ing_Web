@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="user-container">
+            <img class="imagen-usuario" src="Male_User.png" alt="">
+            <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
+            <img class="dropdown-usuario" src="Arrow_drop_down.png" alt="">
+        </div>
+    </div>
+    <div class="dropdown-menu">
+        <ul>
+            <li>Iniciar sesión</li>
+            <li>Registrarse</li>
+            <li>Ver reserva realizada</li>
+            <li>Salir</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="nav">
+            <h1 class="titulo">Panama Bites</h1>
+            <h2 class="frase">Encuéntralos aquí!</h2>
+            <form action="resultados.html">
+                <div class="search-bar">
+                    <input style="padding-left: 1rem;" type="text" name="searchbar" id="searchbar">
+                    <input type="image" class="lupa" src="Search.png" alt="Enviar formulario">
+                </div>
+                <div class="busqueda-avanzada">
+                    <ul>
+                        <li class="menu-item">
+                            Tipo de comida
+                            <ul class="submenu">
+                                <li><input type="checkbox" id="comida1" name="comida[]" value="Panameña"><label for="comida1"> Panameña</label></li>
+                                <li><input type="checkbox" id="comida2" name="comida[]" value="Italiana"><label for="comida2"> Italiana</label></li>
+                                <li><input type="checkbox" id="comida3" name="comida[]" value="China"><label for="comida3"> China</label></li>
+                                <li><input type="checkbox" id="comida4" name="comida[]" value="Mexicana"><label for="comida4"> Mexicana</label></li>
+                                <li><input type="checkbox" id="comida5" name="comida[]" value="Peruana"><label for="comida5"> Peruana</label></li>
+                                <li><input type="checkbox" id="comida6" name="comida[]" value="Española"><label for="comida6"> Española</label></li>
+                                <li><input type="checkbox" id="comida7" name="comida[]" value="Internacional"><label for="comida7"> Internacional</label></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            Tipo de restaurante
+                            <ul class="submenu">
+                                <li><input type="checkbox" id="restaurante1" name="restaurante[]" value="Cafetería"><label for="restaurante1"> Cafetería</label></li>
+                                <li><input type="checkbox" id="restaurante2" name="restaurante[]" value="Fonda"><label for="restaurante2"> Fonda</label></li>
+                                <li><input type="checkbox" id="restaurante3" name="restaurante[]" value="Restaurante"><label for="restaurante3"> Restaurante</label></li>
+                                <li><input type="checkbox" id="restaurante4" name="restaurante[]" value="Comida Rápida"><label for="restaurante4"> Comida Rápida</label></li>
+                                <li><input type="checkbox" id="restaurante5" name="restaurante[]" value="Familiar"><label for="restaurante5"> Familiar</label></li>
+                                <li><input type="checkbox" id="restaurante6" name="restaurante[]" value="Buffet"><label for="restaurante6"> Buffet</label></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            Provincia
+                            <ul class="submenu">
+                                <li><input type="checkbox" id="provincia1" name="provincia[]" value="Coclé"><label for="provincia1"> Coclé</label></li>
+                                <li><input type="checkbox" id="provincia2" name="provincia[]" value="Colón"><label for="provincia2"> Colón</label></li>
+                                <li><input type="checkbox" id="provincia3" name="provincia[]" value="Panamá"><label for="provincia3"> Panamá</label></li>
+                                <li><input type="checkbox" id="provincia4" name="provincia[]" value="Chiriquí"><label for="provincia4"> Chiriquí</label></li>
+                                <li><input type="checkbox" id="provincia5" name="provincia[]" value="Los Santos"><label for="provincia5"> Los Santos</label></li>
+                                <li><input type="checkbox" id="provincia6" name="provincia[]" value="Darién"><label for="provincia6"> Darién</label></li>
+                                <li><input type="checkbox" id="provincia7" name="provincia[]" value="Herrera"><label for="provincia7"> Herrera</label></li>
+                                <li><input type="checkbox" id="provincia8" name="provincia[]" value="Veraguas"><label for="provincia8"> Veraguas</label></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            Costo
+                            <ul class="submenu">
+                                <li><input type="checkbox" id="costo1" name="costo[]" value="Económico"><label for="costo1"> Económico</label></li>
+                                <li><input type="checkbox" id="costo2" name="costo[]" value="Regular"><label for="costo2"> Regular</label></li>
+                                <li><input type="checkbox" id="costo3" name="costo[]" value="Costoso"><label for="costo3"> Costoso</label></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            Facilidades
+                            <ul class="submenu">
+                                <li><input type="checkbox" id="facilidad1" name="facilidad[]" value="Sillas de Bebé"><label for="facilidad1"> Sillas de Bebé</label></li>
+                                <li><input type="checkbox" id="facilidad2" name="facilidad[]" value="Menú Infantil"><label for="facilidad2"> Menú Infantil</label></li>
+                                <li><input type="checkbox" id="facilidad3" name="facilidad[]" value="Accesible para Discapacitados"><label for="facilidad3"> Accesible para Discapacitados</label></li>
+                                <li><input type="checkbox" id="facilidad4" name="facilidad[]" value="Parking"><label for="facilidad4"> Parking</label></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div>
+                        <h4 class="unselectable-text" id="toggle-submenus">Búsqueda avanzada</h4>
+                        <img class="dropdown-busqueda-avanzada" src="Keyboard_arrow_down.png" alt=""
+                            id="toggle-submenus">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <img src="Imagen/restaurante.jpg" alt="Imagen 1">
+            <h2>Restaurante 1</h2>
+            <p>Descripcion del restaurante</p>
+        </div>
+        <div class="box">
+            <img src="Imagen/restaurante.jpg" alt="Imagen 2">
+            <h2>Restaurante 2</h2>
+            <p>Descripcion del restaurante</p>
+        </div>
+        <div class="box">
+            <img src="Imagen/restaurante.jpg" alt="Imagen 3">
+            <h2>Restaurante 3</h2>
+            <p>Descripcion del restaurante</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="social">
+            <h2>Panama Bites</h2>
+            <div>
+                <img src="Facebook.png" alt="">
+                <img src="Instagram.png" alt="">
+                <img src="Gmail.png" alt="">
+            </div>
+        </div>
+        <div class="etc">
+            <h4>Política de privacidad</h4>
+            <h4>Política de cookies</h4>
+            <h4>Condiciones generales</h4>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -428,3 +428,41 @@ header {
     margin-block: auto;
     text-align: justify;
 }
+
+/*CSS DE RESULTADOS*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.5rem solid white;
+    border-bottom: 0.5rem solid white;
+    background-color: #F7E1AE;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border: none; /* Elimina el borde */
+    border-radius: 10px; /* Añade bordes redondeados */
+}
+
+.box > img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del cuadro */
+    height: 50%; /* La imagen ocupa la mitad de la altura del cuadro */
+    object-fit: cover; /* La imagen se ajusta para cubrir el espacio sin deformación */
+}
+
+.box > h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.box > p {
+    font-size: 14px;
+}
+
+/*FIN DEL CSS DE RESULTADOS*/
