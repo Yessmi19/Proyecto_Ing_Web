@@ -110,7 +110,8 @@ body>*{
     color: #000;
     font-family: Scope One;
     font-style: normal;
-    margin: none;
+    text-align: justify;
+   
 
 }
 .h4 {
@@ -180,19 +181,18 @@ body>*{
     background-color: #fcecc0; /* Cambia el color de fondo al pasar el mouse por encima */
 }
 
-/*CSS para la informacion */
+/*CSS para la informacion en tabla*/
 
 .colorcrem {
     background-color: #FFEDC1;
     padding: 15px;
     text-align: justify;
+
 }
 
 .row{
     text-align: justify;
 }
-
-
 /*CSS para el formulario de reserva*/
 .par{
 color: #000;
@@ -204,11 +204,11 @@ font-weight: 400;
 line-height: 124%; /* 24.8px */
 }
 
-.custom-container {
+.custom-cont {
     background-color: #f8ecb1; /* Color de fondo crema */
     padding: 5%;
     border-radius: 10px; /* Bordes redondeados */
-    margin-bottom: 30px;
+
 }
 
 .small-input {
@@ -236,7 +236,57 @@ line-height: 124%; /* 24.8px */
     border: 2px solid #6d6d6d; /* Cambia el color del borde al pasar el mouse por encima */
 }
 
+/*ventana emergente*/
+.form-check {
+    text-align: center;
+    margin-top: 10px;
+}
 
+.confirmar1{
+    text-align: center;
+    background-color: hsl(42, 65%, 68%);
+    display: block;
+    margin: 0 auto;
+    
+}
+.confirmar1:hover {
+    background-color: #e6cb92; /* Cambia el color de fondo al pasar el mouse por encima */
+    color: white;
+}
+
+.modal-body{
+    text-align: justify;
+}
+
+.alert{
+    text-align: justify;
+}
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+.window-notice .content {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
 /*CSS PARA LA PAGINA DE LOGIN^*/
 .login {
     background: #F7E1AE;
@@ -476,7 +526,6 @@ header {
     text-align: justify;
 }
 
-<<<<<<< HEAD
 
 /*tamaños de table y cell*/
 @media (max-width: 768px) {
@@ -491,10 +540,10 @@ header {
     /* Estilos para pantallas medianas (como el Samsung S8+) */
 }
 
-=======
+
 /*CSS DE RESULTADOS*/
 
-.container {
+.containerindex {
     display: flex;
     justify-content: space-around;
     border-top: 0.5rem solid white;
@@ -529,4 +578,15 @@ header {
 }
 
 /*FIN DEL CSS DE RESULTADOS*/
->>>>>>> 792e55efb575c86872bd561f6fab537c1c4a0008
+
+
+.fle-link {
+    display: inline-block;
+    width: 50px; /* ajusta el ancho según tus necesidades */
+    height: 50px; /* ajusta el alto según tus necesidades */
+    background-size: cover;
+}
+
+.fle-link:hover {
+    background-size: 110%; /* Cambia el tamaño al hacer hover, si lo deseas */
+}
