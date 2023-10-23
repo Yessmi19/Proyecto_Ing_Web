@@ -110,7 +110,7 @@ body>*{
     color: #000;
     font-family: Scope One;
     font-style: normal;
-   
+    margin: none;
 
 }
 .h4 {
@@ -180,7 +180,7 @@ body>*{
     background-color: #fcecc0; /* Cambia el color de fondo al pasar el mouse por encima */
 }
 
-/*CSS para la informacion en tabla*/
+/*CSS para la informacion */
 
 .colorcrem {
     background-color: #FFEDC1;
@@ -191,6 +191,51 @@ body>*{
 .row{
     text-align: justify;
 }
+
+
+/*CSS para el formulario de reserva*/
+.par{
+color: #000;
+text-align: justify;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 124%; /* 24.8px */
+}
+
+.custom-container {
+    background-color: #f8ecb1; /* Color de fondo crema */
+    padding: 5%;
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 30px;
+}
+
+.small-input {
+    width: 150px; /* Ancho más pequeño para el campo de fecha */
+}
+
+.fecha{
+    text-align: left;
+}
+
+.form-group{
+    padding-top: 2%;
+}
+
+.btn-colore{
+    color: #000000; /* Cambia el color del texto a tu elección */
+    border-radius: 20px;
+    background: #ffffff;
+    border-color: none;
+    text-align: center;
+}
+.btn-colore:hover {
+    background-color: #000000; /* Cambia el color de fondo al pasar el mouse por encima */
+    color: white;
+    border: 2px solid #6d6d6d; /* Cambia el color del borde al pasar el mouse por encima */
+}
+
 
 /*CSS PARA LA PAGINA DE LOGIN^*/
 .login {
@@ -213,6 +258,8 @@ header {
     font-family: Yellowtail;
 
 }
+
+
 
 @font-face {
     font-family: 'Yellowtail';
@@ -428,3 +475,18 @@ header {
     margin-block: auto;
     text-align: justify;
 }
+
+
+/*tamaños de table y cell*/
+@media (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho (tamaño de tablet) */
+}
+
+@media (max-width: 480px) {
+    /* Estilos para pantallas de hasta 480px de ancho (tamaño de teléfono) */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas (como el Samsung S8+) */
+}
+

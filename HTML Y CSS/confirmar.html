@@ -1,0 +1,76 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Confirmar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    
+
+</head>
+<body class="info"> 
+    <div class="topbar">
+        <div class="user-container">
+            <img class="imagen-usuario" src="Male_User.png" alt="">
+            <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
+            <img class="dropdown-usuario" src="Imagen/Arrow_drop_down.png" alt="">
+        </div>
+    </div>
+    <div class="dropdown-menu">
+        <ul>
+            <li>Iniciar sesión</li>
+            <li>Registrarse</li>
+            <li>Ver reserva realizada</li>
+            <li>Salir</li>
+        </ul>
+    </div>
+    <div class="conta text-center">
+        <div class="d-flex justify-content-between align-items-center mb-1">
+            <div class="d-flex align-items-center">
+                    <img src="Imagen/flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
+
+                    <body class="info"> 
+                        <div class="modal-body">
+                            <p>Fecha: <span id="confirmFecha"></span></p>
+                            <p>Hora: <span id="confirmHora"></span></p>
+                            <p>Cantidad de Personas: <span id="confirmCantidadPersonas"></span></p>
+                            <p>Facilidades: <span id="confirmFacilidades"></span></p>
+                            <p>Comentarios Adicionales: <span id="confirmComentarios"></span></p>
+                        </div>
+                        <div class="text-center">
+                            <form onsubmit="return confirm('¿Estás seguro de que deseas enviar la reserva?');">
+                                <div class="alert alert-warning" role="alert">
+                                </div>
+                                <label for="confirmacionCheckbox">He revisado y confirmo la reserva</label>
+                                <button hrfe="Restaurante1" type="submit" class="btn btn-primary">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="social">
+        <h1 class="panama">Panama Bites</h1>
+        <div>
+            <img src="Imagen/Facebook.png" alt="">
+            <img src="Imagen/Instagram.png" alt="">
+            <img src="Imagen/Gmail.png" alt="">
+        </div>
+    </div>
+    <div class="etc">
+        <h6>Política de privacidad</h6>
+        <h6>Política de cookies</h6>
+        <h6>Condiciones generales</h6>
+    </div>
+       
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/min/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tempusdominus-bootstrap-4@5.39.0/build/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+
+</body>
+</html>
