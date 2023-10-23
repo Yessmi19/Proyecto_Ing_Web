@@ -8,7 +8,6 @@ imagenUsuario.addEventListener('click', toggleDropdown);
 
 // Function to toggle the dropdown menu's visibility
 function toggleDropdown() {
-    console.log('Element clicked!'); // For example, you can log a message to the console
 
   if (dropdownMenu.style.display === 'block') {
     dropdownMenu.style.display = 'none'; // Hide the menu

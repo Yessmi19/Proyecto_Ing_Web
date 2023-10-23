@@ -71,83 +71,82 @@ body>*{
 .dropdown-menu {
     display: none;
     position: fixed; /* Change to fixed positioning */
-    top: 10%; /* Position it at the top of the viewport */
+    top: 10% !important; /* Position it at the top of the viewport */
     right: 0;
     width: 15rem;
     background-color: #fff;
     border: 1px solid #ccc;
-    z-index: 1000; /* Ensure it's on top of everything */
+    z-index: 1000; 
   }
 
   ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
   .dropdown-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
   .dropdown-menu li {
-    padding: 10px;
-    cursor: pointer;
+    padding: 10px !important;
+    cursor: pointer !important;
   }
   
-  /* Style for when hovering over the options */
   .dropdown-menu li:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0 !important;
   }
 
 .user-container>h4{
-    height: fit-content;
-    text-align: center;
+    height: fit-content !important;
+    text-align: center !important;
 }
 
 .imagen-usuario{
-    width: 3rem;
+    width: 3rem !important;
 }
 
 .dropdown-usuario{
-    width: 2rem;
+    width: 2rem !important; 
 }
 
 
 
 .titulo{
-    margin-inline: auto;
-    font-size: 5rem;
+    margin-inline: auto !important;
+    font-size: 5rem !important;
 }
 
 .frase{
-    margin-inline: auto;
+    margin-inline: auto !important;
 }
 
 .search-bar{
-    background-color: rgba(106, 106, 106, 0.5);
-    height: 3rem;
-    margin-inline: auto;
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    background-color: rgba(106, 106, 106, 0.5) !important;
+    height: 3rem !important;
+    margin-inline: auto !important;
+    width: 75% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
 }
 
 .search-bar>form{
-    width: 100%;
-    padding: 0.3rem;
-    padding-inline: 1rem;
+    width: 100% !important;
+    padding: 0.3rem !important;
+    padding-inline: 1rem !important;
 }
 
-.search-bar input{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border-color: none;
-    border: 0;
-    outline: none;
+.search-bar input {
+    width: 100% ;
+    height: 100% ;
+    background-color: transparent !important;
+    border-color: none !important;
+    border: 0 !important;
+    outline: none !important;
 }
 
 .lupa{
@@ -156,88 +155,88 @@ body>*{
 }
 
 .search-bar input:focus{
-    outline: none;
+    outline: none !important;
 }
 
 .busqueda-avanzada{
-    width: 75%;
-    display: flex;
-    margin-inline: auto;
-    justify-content: flex-end;
+    width: 75% !important;
+    display: flex !important;
+    margin-inline: auto !important;
+    justify-content: flex-end !important;
 }
 
 .open{
-    background-color: grey;
+    background-color: grey !important;
 }
 
 .busqueda-avanzada>ul{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 
 .menu-item {
-    display: none;
-    pointer-events: none;
-    flex: 1;
-    background-color: white;
-    width: 100%;
-    position: relative; /* Add relative positioning to make submenus relative to menu items */
+    display: none !important;
+    pointer-events: none !important;
+    flex: 1 !important;
+    background-color: white !important;
+    width: 100% !important;
+    position: relative !important; /* Add relative positioning to make submenus relative to menu items */
   }
   
   .submenu {
-    display: none;
-    pointer-events: none;
-    width: 100%; /* Set the width to 100% to match the width of the parent .menu-item */
-    position: absolute; /* Use absolute positioning to keep submenus within menu items */
+    display: none !important;
+    pointer-events: none !important;
+    width: 100% !important; /* Set the width to 100% to match the width of the parent .menu-item */
+    position: absolute !important; /* Use absolute positioning to keep submenus within menu items */
   }
   
   .submenu li {
-    background-color: gray;
-    padding-block: 0.4rem;
+    background-color: gray !important;
+    padding-block: 0.4rem !important;
   }
   
   .visible {
-    display: block;
-    pointer-events: auto;
+    display: block !important;
+    pointer-events: auto !important;
   }
 
 .busqueda-avanzada>div{
-    display: flex;
-    flex-direction: row;
+    display: flex !important;
+    flex-direction: row !important;
 }
 
 .busqueda-avanzada>h4{
-    text-align: end;
+    text-align: end !important;
 }
 
 .dropdown-busqueda-avanzada{
-    height: 1.2rem;
+    height: 1.2rem !important;
 }
 
 .sections>div{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-block: 1rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    margin-block: 1rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem !important;
 }
 
 .sections>div>h4{
-    text-align: center;
+    text-align: center !important;
 }
 
 .sections img{
-    width: 5rem;
-    aspect-ratio: 1/1;
+    width: 5rem !important;
+    aspect-ratio: 1/1 !important;
 }
 
 .sections>div>*{
-    justify-content: center;
-    margin-inline: 1rem;
+    justify-content: center !important;
+    margin-inline: 1rem !important;
 }
 
 .footer>div{
@@ -245,22 +244,22 @@ body>*{
 }
 
 .social{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin-block: auto;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 20% !important;
+    margin-block: auto !important;
 }
 
 .social>h2{
-    text-align: center;
+    text-align: center !important;
 }
 
 .social>div{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    gap: 1rem;
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: center !important;
+    gap: 1rem !important;
 }
 
 .social img{
@@ -484,12 +483,6 @@ header {
 
 
 /*CSS PARA LA PAGINA DE REGISTRO*/
-body {
-    background: #F7E1AE;
-    padding: 100px 428px 212px 428px; 
-}
-
-
 .deco {
     position: fixed;
     top: 0;
@@ -649,3 +642,99 @@ header {
 }
 
 /*FIN DEL CSS DE RESULTADOS*/
+
+/*CSS para el formulario de reserva*/
+.par{
+color: #000;
+text-align: justify;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 124%; /* 24.8px */
+}
+
+.custom-container {
+    background-color: #f8ecb1; /* Color de fondo crema */
+    padding: 5%;
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 5%;
+
+}
+
+.small-input {
+    width: 150px; /* Ancho más pequeño para el campo de fecha */
+}
+
+.fecha{
+    text-align: left;
+}
+
+.form-group{
+    padding-top: 2%;
+}
+
+.btn-colore{
+    color: #000000; /* Cambia el color del texto a tu elección */
+    border-radius: 20px;
+    background: #ffffff;
+    border-color: none;
+    text-align: center;
+}
+.btn-colore:hover {
+    background-color: #000000; /* Cambia el color de fondo al pasar el mouse por encima */
+    color: white;
+    border: 2px solid #6d6d6d; /* Cambia el color del borde al pasar el mouse por encima */
+}
+
+/*ventana emergente*/
+.form-check {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.confirmar1{
+    text-align: center;
+    background-color: hsl(42, 65%, 68%);
+    display: block;
+    margin: 0 auto;
+    
+}
+.confirmar1:hover {
+    background-color: #e6cb92; /* Cambia el color de fondo al pasar el mouse por encima */
+    color: white;
+}
+
+.modal-body{
+    text-align: justify;
+}
+
+.alert{
+    text-align: justify;
+}
+.window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+.window-notice .content {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
