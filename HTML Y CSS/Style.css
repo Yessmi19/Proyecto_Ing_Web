@@ -26,6 +26,31 @@ body>*{
     justify-content: flex-end;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.8;
+}
+
+.content>*{
+    width: 100%;
+}
+
+.nav{
+    background-color: #F7E1AE;
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+}
+
+.sections{
+    background-color: white;
+    flex: 1.3;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 5rem;
+}
+
 .footer{
     background-color: #F7E1AE;
     flex: 0.6;
@@ -52,6 +77,12 @@ body>*{
     background-color: #fff;
     border: 1px solid #ccc;
     z-index: 1000; /* Ensure it's on top of everything */
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   
   .dropdown-menu ul {
@@ -83,6 +114,158 @@ body>*{
     width: 2rem;
 }
 
+
+
+.titulo{
+    margin-inline: auto;
+    font-size: 5rem;
+}
+
+.frase{
+    margin-inline: auto;
+}
+
+.search-bar{
+    background-color: rgba(106, 106, 106, 0.5);
+    height: 3rem;
+    margin-inline: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-bar>form{
+    width: 100%;
+    padding: 0.3rem;
+    padding-inline: 1rem;
+}
+
+.search-bar input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-color: none;
+    border: 0;
+    outline: none;
+}
+
+.lupa{
+    width: 3.5rem !important;
+    height: 2.5rem !important;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.busqueda-avanzada{
+    width: 75%;
+    display: flex;
+    margin-inline: auto;
+    justify-content: flex-end;
+}
+
+.open{
+    background-color: grey;
+}
+
+.busqueda-avanzada>ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.menu-item {
+    display: none;
+    pointer-events: none;
+    flex: 1;
+    background-color: white;
+    width: 100%;
+    position: relative; /* Add relative positioning to make submenus relative to menu items */
+  }
+  
+  .submenu {
+    display: none;
+    pointer-events: none;
+    width: 100%; /* Set the width to 100% to match the width of the parent .menu-item */
+    position: absolute; /* Use absolute positioning to keep submenus within menu items */
+  }
+  
+  .submenu li {
+    background-color: gray;
+    padding-block: 0.4rem;
+  }
+  
+  .visible {
+    display: block;
+    pointer-events: auto;
+  }
+
+.busqueda-avanzada>div{
+    display: flex;
+    flex-direction: row;
+}
+
+.busqueda-avanzada>h4{
+    text-align: end;
+}
+
+.dropdown-busqueda-avanzada{
+    height: 1.2rem;
+}
+
+.sections>div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-block: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sections>div>h4{
+    text-align: center;
+}
+
+.sections img{
+    width: 5rem;
+    aspect-ratio: 1/1;
+}
+
+.sections>div>*{
+    justify-content: center;
+    margin-inline: 1rem;
+}
+
+.footer>div{
+    margin-inline-end: 2rem;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-block: auto;
+}
+
+.social>h2{
+    text-align: center;
+}
+
+.social>div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social img{
+    width: 2rem;
+}
 
 /* CSS PARA INFORMACION DEL RESTAURANTE */
 
