@@ -204,10 +204,11 @@ font-weight: 400;
 line-height: 124%; /* 24.8px */
 }
 
-.custom-cont {
+.custom-container {
     background-color: #f8ecb1; /* Color de fondo crema */
     padding: 5%;
     border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 5%;
 
 }
 
@@ -238,7 +239,7 @@ line-height: 124%; /* 24.8px */
 
 /*ventana emergente*/
 .form-check {
-    text-align: center;
+    text-align: justify;
     margin-top: 10px;
 }
 

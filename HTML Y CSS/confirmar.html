@@ -10,6 +10,11 @@
 
 </head>
 <body class="info"> 
+    <script>
+        function irAPaginaAnterior() {
+            window.history.back();
+        }
+    </script>
     <div class="topbar">
         <div class="user-container">
             <img class="imagen-usuario" src="Male_User.png" alt="">
@@ -28,16 +33,7 @@
     <div class="conta text-center">
         <div class="d-flex justify-content-between align-items-center mb-1">
             <div class="d-flex align-items-center">
-                <a href="Restaurante1.html">
-                <a href="Restaurante2.html">
-                <a href="Restaurante3.html">
-                <a href="Restaurante4.html">
-                <a href="Restaurante5.html">
-                <a href="Restaurante6.html">
-                <a href="Restaurante7.html">
-                <a href="Restaurante8.html">
-                <a href="Restaurante9.html">
-                <a href="Restaurante10.html">
+                    <a href="javascript:history.back()">
                     <img src="Imagen/flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
                 </a>
                 <h1 class="h1">Reservar</h1>
@@ -139,7 +135,8 @@
             </div>
             <input type="checkbox" id="confirmacionCheckbox" required>
             <label for="confirmacionCheckbox">He revisado y confirmo la reserva</label>
-            <button type="submit" class="confirmar1  btn ">Confirmar</button>
+
+            <button onclick="irAPaginaAnterior()" type="submit" class="confirmar1  btn ">Confirmar</button>
         </form>
     </div>
     </div>
