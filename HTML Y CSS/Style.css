@@ -630,14 +630,14 @@ header {
 }
 
 .box {
-    width: 200px;
-    height: 240px;
+    width: 425px;
+    height: 400px;
     text-align: center;
     padding: 10px;
     margin: 10px;
     background-color: #f2f2f2;
     border: none; /* Elimina el borde */
-    border-radius: 10px; /* Añade bordes redondeados */
+    border-radius: 20px; /* Añade bordes redondeados */
 }
 
 .box > img {
@@ -647,12 +647,12 @@ header {
 }
 
 .box > h2 {
-    font-size: 17.5px;
-    margin: 2.5px 0;
+    font-size: 30px;
+    margin: 5px 0;
 }
 
-.box > p {
-    font-size: 14px;
+.box > p,a {
+    font-size: 20px;
 }
 
 /*FIN DEL CSS DE RESULTADOS*/
