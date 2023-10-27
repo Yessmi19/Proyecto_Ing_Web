@@ -607,17 +607,31 @@ header {
 
 /*CSS DE RESULTADOS*/
 
-.container {
+.containertop {
     display: flex;
     justify-content: space-around;
     border-top: 0.5rem solid white;
+    background-color: #F7E1AE;
+    padding-top: 1rem;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F7E1AE;
+    padding-top: 2rem;
+}
+.containerbottom {
+    display: flex;
+    justify-content: space-around;
     border-bottom: 0.5rem solid white;
     background-color: #F7E1AE;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .box {
     width: 200px;
-    height: 200px;
+    height: 240px;
     text-align: center;
     padding: 10px;
     margin: 10px;
@@ -633,8 +647,8 @@ header {
 }
 
 .box > h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 17.5px;
+    margin: 2.5px 0;
 }
 
 .box > p {
