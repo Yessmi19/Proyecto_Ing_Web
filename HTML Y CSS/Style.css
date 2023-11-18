@@ -37,12 +37,15 @@ body>*{
     width: 100%;
 }
 
-.nav{
+/* Nuevo Contenido */
+nav{
     background-color: #F7E1AE;
     flex: 1.4;
     display: flex;
     flex-direction: column;
 }
+
+/* Fin Nuevo Contenido */
 
 .sections{
     background-color: white;
@@ -114,7 +117,14 @@ body>*{
     width: 2rem !important; 
 }
 
+/* Nuevo Contenido */
 
+.usuario-font{
+    text-decoration: none;
+    color: black;
+}
+
+/* Fin Nuevo Contenido */
 
 .titulo{
     margin-inline: auto !important;
@@ -414,7 +424,7 @@ body>*{
     background-color: #fcecc0; /* Cambia el color de fondo al pasar el mouse por encima */
 }
 
-/CSS para la informacion en tabla/
+/*CSS para la informacion en tabla*/
 
 .colorcrem {
     background-color: #FFEDC1;
@@ -426,7 +436,7 @@ body>*{
     text-align: justify;
 }
 
-/CSS PARA LA PAGINA DE LOGIN^/
+/*CSS PARA LA PAGINA DE LOGIN^*/
 .login {
     background: #F7E1AE;
     margin: 100px auto 212px auto;
@@ -531,10 +541,10 @@ header {
     margin-right: 6px;
 }
 
-/FIN DEL CSS DE PAGINA DE LOGIN/
+/*FIN DEL CSS DE PAGINA DE LOGIN*/
 
 
-/CSS PARA LA PAGINA DE REGISTRO/
+/*CSS PARA LA PAGINA DE REGISTRO*/
 .deco {
     position: fixed;
     top: 0;
@@ -628,10 +638,10 @@ header {
     margin-right: 6px;
 }
 
-/FIN DEL CSS DEL REGISTRO/
+/*FIN DEL CSS DEL REGISTRO*/
 
 
-/FOOTER/
+/*FOOTER*/
 
 .footer{
     background-color: #F7E1AE;
@@ -657,7 +667,7 @@ header {
     text-align: justify;
 }
 
-/CSS DE RESULTADOS/
+/*CSS DE RESULTADOS*/
 
 .containertop {
     display: flex;
@@ -707,9 +717,9 @@ header {
     font-size: 20px;
 }
 
-/FIN DEL CSS DE RESULTADOS/
+/*FIN DEL CSS DE RESULTADOS*/
 
-/CSS para el formulario de reserva/
+/*CSS para el formulario de reserva*/
 .par{
 color: #000;
 text-align: justify;
@@ -753,7 +763,7 @@ line-height: 124%; /* 24.8px */
     border: 2px solid #6d6d6d; /* Cambia el color del borde al pasar el mouse por encima */
 }
 
-/ventana emergente/
+/*ventana emergente*/
 .form-check {
     text-align: justify;
     margin-top: 10px;

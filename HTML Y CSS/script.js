@@ -1,11 +1,13 @@
 
 const nombreUsuario = document.querySelector('.nombre-usuario');
 const imagenUsuario = document.querySelector('.imagen-usuario');
+const dropDownUsuario = document.querySelector('.dropdown-usuario');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 
 // Add click event listeners to both elements
 nombreUsuario.addEventListener('click', toggleDropdown);
 imagenUsuario.addEventListener('click', toggleDropdown);
+dropDownUsuario.addEventListener('click', toggleDropdown);
 
 // Function to toggle the dropdown menu's visibility
 function toggleDropdown() {
@@ -19,7 +21,7 @@ function toggleDropdown() {
 
 // Close the menu when clicking outside of it
 document.addEventListener('click', function (event) {
-  if (!nombreUsuario.contains(event.target) && !imagenUsuario.contains(event.target)) {
+  if (!nombreUsuario.contains(event.target) && !imagenUsuario.contains(event.target) && !dropDownUsuario.contains(event.target)) {
     dropdownMenu.style.display = 'none';
   }
 });
