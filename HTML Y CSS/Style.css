@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-.unselectable-text {
+.unselectable-text,
+.all-unselectable-text {
     user-select: none;
   }
 
@@ -163,7 +164,10 @@ body>*{
     display: flex !important;
     margin-inline: auto !important;
     justify-content: flex-end !important;
+    background-color: rgba(106, 106, 106, 0.25) !important;
 }
+
+
 
 .open{
     background-color: grey !important;
@@ -171,30 +175,71 @@ body>*{
 
 .busqueda-avanzada>ul{
     width: 100% !important;
+    height: 3rem;
     display: flex !important;
     flex-direction: row !important;
+    padding-bottom: 3.25rem !important;
+    padding-inline: 0.5rem;
 }
 
 
 .menu-item {
     display: none !important;
     pointer-events: none !important;
-    flex: 1 !important;
-    background-color: white !important;
-    width: 100% !important;
+    flex: auto !important;
+    margin-inline: 0.25rem;
+    margin-top: 0.5rem;
+    background-color: #FFFFFF;
     position: relative !important; /* Add relative positioning to make submenus relative to menu items */
+  }
+
+  input[type="checkbox"] {
+    opacity: 1;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .menu-item h3{
+    background-color: #FFFFFF !important;
+    padding-block: 0.5rem;
+    padding-left: 1rem;
   }
   
   .submenu {
     display: none !important;
     pointer-events: none !important;
+    background-color: #EEEEEE !important;
     width: 100% !important; /* Set the width to 100% to match the width of the parent .menu-item */
     position: absolute !important; /* Use absolute positioning to keep submenus within menu items */
-  }
+    border-right: 1rem solid #EEEEEE;
+    }
   
   .submenu li {
-    background-color: gray !important;
-    padding-block: 0.4rem !important;
+    background-color: #EEEEEE !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .submenu li * {
+    display: inline-block;
+    height: 100%;
+    padding-block: 1rem;
+    padding-left: 0.5rem;
+    padding-right: -1rem !important;
+  }
+
+  .submenu li label {
+    flex-grow: 1;
+  }
+
+  .submenu li label:not(.last){
+    border-bottom: 1px solid black;
+  }
+
+  .submenu li input {
+    padding-inline: 0.2rem !important;
   }
   
   .visible {
@@ -205,6 +250,13 @@ body>*{
 .busqueda-avanzada>div{
     display: flex !important;
     flex-direction: row !important;
+    height: 100%;
+    width: 20%;
+    margin-top: 1rem;
+}
+
+.busqueda-avanzada>div *{
+    height: 100%;
 }
 
 .busqueda-avanzada>h4{
@@ -362,7 +414,7 @@ body>*{
     background-color: #fcecc0; /* Cambia el color de fondo al pasar el mouse por encima */
 }
 
-/*CSS para la informacion en tabla*/
+/CSS para la informacion en tabla/
 
 .colorcrem {
     background-color: #FFEDC1;
@@ -374,7 +426,7 @@ body>*{
     text-align: justify;
 }
 
-/*CSS PARA LA PAGINA DE LOGIN^*/
+/CSS PARA LA PAGINA DE LOGIN^/
 .login {
     background: #F7E1AE;
     margin: 100px auto 212px auto;
@@ -479,10 +531,10 @@ header {
     margin-right: 6px;
 }
 
-/*FIN DEL CSS DE PAGINA DE LOGIN*/
+/FIN DEL CSS DE PAGINA DE LOGIN/
 
 
-/*CSS PARA LA PAGINA DE REGISTRO*/
+/CSS PARA LA PAGINA DE REGISTRO/
 .deco {
     position: fixed;
     top: 0;
@@ -576,10 +628,10 @@ header {
     margin-right: 6px;
 }
 
-/*FIN DEL CSS DEL REGISTRO*/
+/FIN DEL CSS DEL REGISTRO/
 
 
-/*FOOTER*/
+/FOOTER/
 
 .footer{
     background-color: #F7E1AE;
@@ -605,25 +657,39 @@ header {
     text-align: justify;
 }
 
-/*CSS DE RESULTADOS*/
+/CSS DE RESULTADOS/
 
-.container {
+.containertop {
     display: flex;
     justify-content: space-around;
     border-top: 0.5rem solid white;
+    background-color: #F7E1AE;
+    padding-top: 1rem;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F7E1AE;
+    padding-top: 2rem;
+}
+.containerbottom {
+    display: flex;
+    justify-content: space-around;
     border-bottom: 0.5rem solid white;
     background-color: #F7E1AE;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .box {
-    width: 200px;
-    height: 200px;
+    width: 425px;
+    height: 400px;
     text-align: center;
     padding: 10px;
     margin: 10px;
     background-color: #f2f2f2;
     border: none; /* Elimina el borde */
-    border-radius: 10px; /* Añade bordes redondeados */
+    border-radius: 20px; /* Añade bordes redondeados */
 }
 
 .box > img {
@@ -633,17 +699,17 @@ header {
 }
 
 .box > h2 {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 30px;
+    margin: 5px 0;
 }
 
-.box > p {
-    font-size: 14px;
+.box > p,a {
+    font-size: 20px;
 }
 
-/*FIN DEL CSS DE RESULTADOS*/
+/FIN DEL CSS DE RESULTADOS/
 
-/*CSS para el formulario de reserva*/
+/CSS para el formulario de reserva/
 .par{
 color: #000;
 text-align: justify;
@@ -687,7 +753,7 @@ line-height: 124%; /* 24.8px */
     border: 2px solid #6d6d6d; /* Cambia el color del borde al pasar el mouse por encima */
 }
 
-/*ventana emergente*/
+/ventana emergente/
 .form-check {
     text-align: justify;
     margin-top: 10px;
