@@ -9,25 +9,26 @@
 </head>
 
 <body>
-    <div class="topbar">
-        <div class="user-container">
-            <img class="imagen-usuario" src="Imagen/Male_User.png" alt="">
-            <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
-            <img class="dropdown-usuario" src="Imagen/Arrow_drop_down.png" alt="">
-        </div>
-    </div>
+    <header class="topbar">
+            <div class="user-container">
+                <img class="imagen-usuario" src="Imagen/Male_User.png" alt="">
+                <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
+                <img class="dropdown-usuario" src="Imagen/Arrow_drop_down.png" alt="">
+            </div>
+    </header>
+    
     <div class="dropdown-menu">
         <ul>
             <li><a class="usuario-font" href="">Ver reservas</a></li>
             <li><a class="usuario-font" href="Login.html">Iniciar sesión</a></li>
             <li><a class="usuario-font" href="Registro.html">Registrarse</a></li>
-            <li><a class="usuario-font" href="Registro.html">Cerrar sesión</a></li>
+            <li><a class="usuario-font" href="Login.html">Cerrar sesión</a></li>
         </ul>
     </div>
 
     <div class="content">
         <nav>
-            <h1 class="titulo">Panama Bites</h1>
+            <h1 class="titulo"><a href="">Panama Bites</a></h1>
             <h2 class="frase">Encuéntralos aquí!</h2>
             <form action="resultados.html">
                 <div class="search-bar">
@@ -75,7 +76,7 @@
                         <li class="menu-item">
                             <h3>Costo</h3>
                             <ul class="submenu">
-                                <li><div class="input-container"><input type="checkbox" id="costo1" name="costo[]" value="Económico"></div><label for="costo1"> Económico</label></li>
+                                <li><div class="input-container"><input type="checkbox" id="costo1" name="costo[]" value="Económico"></div><label style="font-size: 14px;" for="costo1"> Económico</label></li>
                                 <li><div class="input-container"><input type="checkbox" id="costo2" name="costo[]" value="Regular"></div><label for="costo2"> Regular</label></li>
                                 <li><div class="input-container"><input type="checkbox" id="costo3" name="costo[]" value="Costoso"></div><label class="last" for="costo3"> Costoso</label></li>
                             </ul>
