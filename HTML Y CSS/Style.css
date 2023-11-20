@@ -7,6 +7,7 @@
 .unselectable-text,
 .all-unselectable-text {
     user-select: none;
+    font-family: 'Work Sans', sans-serif;
   }
 
 body{
@@ -53,6 +54,7 @@ nav{
     display: flex;
     flex-direction: row;
     padding-inline: 5rem;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .footer{
@@ -62,6 +64,7 @@ nav{
     display: flex;
     flex-direction: row;
     gap: 4rem;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .user-container{
@@ -81,6 +84,7 @@ nav{
     background-color: #fff;
     border: 1px solid #ccc;
     z-index: 1000; 
+    font-family: 'Work Sans', sans-serif;
   }
 
   ul {
@@ -98,6 +102,10 @@ nav{
   .dropdown-menu li {
     padding: 10px !important;
     cursor: pointer !important;
+  }
+
+  .dropdown-menu a {
+   text-decoration: none;
   }
   
   .dropdown-menu li:hover {
@@ -129,10 +137,13 @@ nav{
 .titulo{
     margin-inline: auto !important;
     font-size: 5rem !important;
+    font-family: Yellowtail;
+
 }
 
 .frase{
     margin-inline: auto !important;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .search-bar{
@@ -201,6 +212,7 @@ nav{
     margin-top: 0.5rem;
     background-color: #FFFFFF;
     position: relative !important; /* Add relative positioning to make submenus relative to menu items */
+    font-family: 'Work Sans', sans-serif;
   }
 
   input[type="checkbox"] {
@@ -314,6 +326,7 @@ nav{
 
 .social>h2{
     text-align: center !important;
+    font-family: Yellowtail;
 }
 
 .social>div{
@@ -352,8 +365,8 @@ nav{
     height: 41px;
     flex-shrink: 0;
     color: #000;
-    font-family: Scope One;
     font-style: normal;
+    font-family: 'Work Sans', sans-serif;
    
 
 }
@@ -363,11 +376,16 @@ nav{
     padding-top: 1%;
     flex-shrink: 0;
     color: #000;
-    font-family: Scope One;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 124%; /* 43.4px */
+    
     }
+    
+strong{
+    font-family: 'Work Sans', sans-serif;
+}
     
     /* Estilos para hacer las imágenes circulares y ajustar el tamaño */
     
@@ -442,6 +460,11 @@ nav{
     margin: 100px auto 212px auto;
 }
 
+#logintit{
+    font-size: 50px !important; 
+    margin-bottom: -45px;
+}
+
 .deco {
     width: 1741px;
     height: 74px;
@@ -508,6 +531,7 @@ header {
     margin-right: 41px;
     font-size: 18px;
     font-weight:normal;
+    text-align: center;
 }
 
 .cuadrolo form input {
@@ -520,13 +544,15 @@ header {
 .cuadrolo button{
     margin: 0 auto;
     margin-top: 20px;
+    margin-right: 50px;
+    align-items: center;
     text-align: center;
-    margin-right: 43px;
     font-family: Squada One;
     width: 100px;
     color: rgb(0, 0, 0);
     background-color: #F7E1AE;
     border-color: #F7E1AE;
+    width: 151px;
 }
 .color:hover {
     background-color: #e3c379;
@@ -539,6 +565,14 @@ header {
 .cuadrolo #flecha {
     width: 56px;
     margin-right: 6px;
+}
+
+#contra{
+    font-size:16px ;
+    color: #424242;
+    font-style: italic;
+    margin-right: 50px;
+    
 }
 
 /*FIN DEL CSS DE PAGINA DE LOGIN*/
@@ -618,13 +652,14 @@ header {
 .cuadro button{
     margin: 0 auto;
     margin-top: 30px;
-    margin-left:113px ;
+    margin-left:95px ;
     display: block;
     font-family: Squada One;
     width: 110px;
     color: rgb(0, 0, 0);
     background-color: #F7E1AE;
     border-color: #F7E1AE;
+    width: 151px;
 }
 
 .color:hover {
@@ -700,6 +735,7 @@ header {
     background-color: #f2f2f2;
     border: none; /* Elimina el borde */
     border-radius: 20px; /* Añade bordes redondeados */
+    font-family: 'Work Sans', sans-serif;
 }
 
 .box > img {
@@ -715,6 +751,12 @@ header {
 
 .box > p,a {
     font-size: 20px;
+    text-align: justify !important;
+}
+
+.box > a{
+    font-style: italic;
+    color: #d9a834;
 }
 
 /*FIN DEL CSS DE RESULTADOS*/
