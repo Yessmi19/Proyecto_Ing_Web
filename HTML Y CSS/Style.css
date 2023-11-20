@@ -148,10 +148,10 @@ nav{
     
 }
 
-.titulo >a {
-    font-size: 80px;
-    text-decoration: none;
-    color: black;
+.titulo>a{
+    font-size: 80px !important;
+    text-decoration: none !important;
+    color: black !important;
 }
 
 /* Fin Nuevo Contenido */
