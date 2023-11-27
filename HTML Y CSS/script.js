@@ -1,10 +1,13 @@
+
 const nombreUsuario = document.querySelector('.nombre-usuario');
 const imagenUsuario = document.querySelector('.imagen-usuario');
+const dropDownUsuario = document.querySelector('.dropdown-usuario');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 
 // Add click event listeners to both elements
 nombreUsuario.addEventListener('click', toggleDropdown);
 imagenUsuario.addEventListener('click', toggleDropdown);
+dropDownUsuario.addEventListener('click', toggleDropdown);
 
 // Function to toggle the dropdown menu's visibility
 function toggleDropdown() {
@@ -18,7 +21,7 @@ function toggleDropdown() {
 
 // Close the menu when clicking outside of it
 document.addEventListener('click', function (event) {
-  if (!nombreUsuario.contains(event.target) && !imagenUsuario.contains(event.target)) {
+  if (!nombreUsuario.contains(event.target) && !imagenUsuario.contains(event.target) && !dropDownUsuario.contains(event.target)) {
     dropdownMenu.style.display = 'none';
   }
 });
@@ -34,6 +37,7 @@ dropdownMenu.addEventListener('click', function (event) {
 
 const toggleSubmenus = document.querySelectorAll("#toggle-submenus");
 const submenuTitles = document.querySelectorAll('.menu-item');
+const submenuTitlesH3 = document.querySelectorAll('.menu-item>h3');
 const submenus = document.querySelectorAll('.submenu');
 const busqueda = document.querySelectorAll('.busqueda-avanzada');
 
@@ -53,7 +57,7 @@ toggleSubmenus.forEach((toggle) => {
 });
 
 // Add click event listeners to toggle visibility of submenus
-submenuTitles.forEach((title, index) => {
+submenuTitlesH3.forEach((title, index) => {
   title.addEventListener('click', () => {
     submenus[index].classList.toggle('visible');
   });
