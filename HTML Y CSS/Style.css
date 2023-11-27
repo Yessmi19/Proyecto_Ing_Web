@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
-.unselectable-text {
+.unselectable-text,
+.all-unselectable-text {
     user-select: none;
+    font-family: 'Work Sans', sans-serif;
   }
 
 body{
@@ -19,12 +21,18 @@ body>*{
     width: 100%;
 }
 
+/* Nuevo Contenido */
+
 .topbar{
     height: 10%;
     background-color: #FFF8D6;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 0 !important;
+    min-height: 75px;
 }
+
+/* Fin Nuevo Contenido */
 
 .content{
     display: flex;
@@ -36,12 +44,16 @@ body>*{
     width: 100%;
 }
 
-.nav{
+/* Nuevo Contenido */
+nav{
     background-color: #F7E1AE;
     flex: 1.4;
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
+
+/* Fin Nuevo Contenido */
 
 .sections{
     background-color: white;
@@ -49,6 +61,7 @@ body>*{
     display: flex;
     flex-direction: row;
     padding-inline: 5rem;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .footer{
@@ -58,6 +71,7 @@ body>*{
     display: flex;
     flex-direction: row;
     gap: 4rem;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .user-container{
@@ -77,6 +91,7 @@ body>*{
     background-color: #fff;
     border: 1px solid #ccc;
     z-index: 1000; 
+    font-family: 'Work Sans', sans-serif;
   }
 
   ul {
@@ -94,6 +109,10 @@ body>*{
   .dropdown-menu li {
     padding: 10px !important;
     cursor: pointer !important;
+  }
+
+  .dropdown-menu a {
+   text-decoration: none;
   }
   
   .dropdown-menu li:hover {
@@ -113,15 +132,33 @@ body>*{
     width: 2rem !important; 
 }
 
+/* Nuevo Contenido */
+
+.usuario-font{
+    text-decoration: none;
+    color: black;
+}
+
 
 
 .titulo{
     margin-inline: auto !important;
     font-size: 5rem !important;
+    font-family: Yellowtail;
+    
 }
+
+.titulo>a{
+    font-size: 80px !important;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+/* Fin Nuevo Contenido */
 
 .frase{
     margin-inline: auto !important;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .search-bar{
@@ -163,7 +200,10 @@ body>*{
     display: flex !important;
     margin-inline: auto !important;
     justify-content: flex-end !important;
+    background-color: rgba(106, 106, 106, 0.25) !important;
 }
+
+
 
 .open{
     background-color: grey !important;
@@ -171,30 +211,72 @@ body>*{
 
 .busqueda-avanzada>ul{
     width: 100% !important;
+    height: 3rem !important;
     display: flex !important;
     flex-direction: row !important;
+    padding-bottom: 3.25rem !important;
+    padding-inline: 0.5rem !important;
 }
 
 
 .menu-item {
     display: none !important;
     pointer-events: none !important;
-    flex: 1 !important;
-    background-color: white !important;
-    width: 100% !important;
+    flex: auto !important;
+    margin-inline: 0.25rem;
+    margin-top: 0.5rem;
+    background-color: #FFFFFF;
     position: relative !important; /* Add relative positioning to make submenus relative to menu items */
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  input[type="checkbox"] {
+    opacity: 1;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .menu-item h3{
+    background-color: #FFFFFF !important;
+    padding-block: 0.5rem;
+    padding-left: 1rem;
   }
   
   .submenu {
     display: none !important;
     pointer-events: none !important;
+    background-color: #EEEEEE !important;
     width: 100% !important; /* Set the width to 100% to match the width of the parent .menu-item */
     position: absolute !important; /* Use absolute positioning to keep submenus within menu items */
-  }
+    border-right: 1rem solid #EEEEEE;
+    }
   
   .submenu li {
-    background-color: gray !important;
-    padding-block: 0.4rem !important;
+    background-color: #EEEEEE !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .submenu li * {
+    display: inline-block;
+    height: 100%;
+    padding-block: 1rem;
+    padding-left: 0.5rem;
+    padding-right: -1rem !important;
+  }
+
+  .submenu li label {
+    flex-grow: 1;
+  }
+
+  .submenu li label:not(.last){
+    border-bottom: 1px solid black;
+  }
+
+  .submenu li input {
+    padding-inline: 0.2rem !important;
   }
   
   .visible {
@@ -205,6 +287,13 @@ body>*{
 .busqueda-avanzada>div{
     display: flex !important;
     flex-direction: row !important;
+    height: 100%;
+    width: 20%;
+    margin-top: 1rem;
+}
+
+.busqueda-avanzada>div *{
+    height: 100%;
 }
 
 .busqueda-avanzada>h4{
@@ -252,6 +341,7 @@ body>*{
 
 .social>h2{
     text-align: center !important;
+    font-family: Yellowtail;
 }
 
 .social>div{
@@ -268,31 +358,13 @@ body>*{
 
 /* CSS PARA INFORMACION DEL RESTAURANTE */
 
-.info {
-    background: #ffffff;
-    text-align: center;
-    padding: 0px;
-}
-
-.conta {
-    margin-top: 16px;
-}
-
-.fle {
-    width: 50px;
-    height: 50px;
-    flex-shrink: 0;
-    margin-right: 6px; /* Ajustar el margen derecho a 6px */
-    }
-
 .h1 {
-    width: 300px;
-    height: 41px;
+
     flex-shrink: 0;
     color: #000;
     font-family: Scope One;
     font-style: normal;
-   
+    padding: auto;
 
 }
 .h4 {
@@ -366,18 +438,27 @@ body>*{
 
 .colorcrem {
     background-color: #FFEDC1;
-    padding: 15px;
+    padding: 20px !important;
     text-align: justify;
+
 }
 
 .row{
     text-align: justify;
+    margin-left: 3% !important;
+    margin-right: 3% !important;
 }
+
 
 /*CSS PARA LA PAGINA DE LOGIN^*/
 .login {
     background: #F7E1AE;
     margin: 100px auto 212px auto;
+}
+
+#logintit{
+    font-size: 50px;
+    margin-bottom: -45px;
 }
 
 .deco {
@@ -448,6 +529,11 @@ header {
     font-weight:normal;
 }
 
+.sc{
+    text-align: justify;
+
+}
+
 .cuadrolo form input {
     margin-bottom: 7.5px;
     display: block;
@@ -458,13 +544,15 @@ header {
 .cuadrolo button{
     margin: 0 auto;
     margin-top: 20px;
+    margin-right: 50px;
+    align-items: center;
     text-align: center;
-    margin-right: 43px;
     font-family: Squada One;
     width: 100px;
     color: rgb(0, 0, 0);
     background-color: #F7E1AE;
     border-color: #F7E1AE;
+    width: 151px;
 }
 .color:hover {
     background-color: #e3c379;
@@ -473,11 +561,22 @@ header {
 }
 
 
-
 .cuadrolo #flecha {
     width: 56px;
     margin-right: 6px;
 }
+
+
+.sin-subrayado{
+    font-size: 16px;
+    color: #858585;
+    font-style: italic;
+    margin-right: 50px;
+    text-decoration: none;
+}
+ 
+
+
 
 /*FIN DEL CSS DE PAGINA DE LOGIN*/
 
@@ -556,13 +655,14 @@ header {
 .cuadro button{
     margin: 0 auto;
     margin-top: 30px;
-    margin-left:113px ;
+    margin-left:95px ;
     display: block;
     font-family: Squada One;
     width: 110px;
     color: rgb(0, 0, 0);
     background-color: #F7E1AE;
     border-color: #F7E1AE;
+    width: 151px;
 }
 
 .color:hover {
@@ -607,6 +707,15 @@ header {
 
 /*CSS DE RESULTADOS*/
 
+/* Nuevo Contenido */
+
+.regreso {
+    display: flex;
+    align-items: center;
+}
+
+/* Fin Nuevo Contenido */
+
 .containertop {
     display: flex;
     justify-content: space-around;
@@ -638,6 +747,7 @@ header {
     background-color: #f2f2f2;
     border: none; /* Elimina el borde */
     border-radius: 20px; /* Añade bordes redondeados */
+    font-family: 'Work Sans', sans-serif;
 }
 
 .box > img {
@@ -653,6 +763,12 @@ header {
 
 .box > p,a {
     font-size: 20px;
+    text-align: justify !important;
+}
+
+.box > a{
+    font-style: italic;
+    color: #d9a834;
 }
 
 /*FIN DEL CSS DE RESULTADOS*/
@@ -664,30 +780,60 @@ text-align: justify;
 font-family: Work Sans;
 font-size: 20px;
 font-style: normal;
-font-weight: 400;
-line-height: 124%; /* 24.8px */
+padding-left: 5%;
+padding-right: 5%;
 }
 
-.custom-container {
+.reserva{
+    text-align: center;
+}
+
+.var {
     background-color: #f8ecb1; /* Color de fondo crema */
     padding: 5%;
+    padding-top: 0%;
+    margin-bottom: 15px;
     border-radius: 10px; /* Bordes redondeados */
-    margin-bottom: 5%;
+    margin: auto; /* Centrar el cuadro */
+    max-width: 650px; /* Ancho máximo del cuadro */
+    text-align: justify;
+    margin-bottom: 20px; /* Agregado: Espacio en la parte inferior */
+}
 
+
+.form-groups{
+    text-align: justify;
+    margin: auto;
+}
+.form-check {
+    margin:auto;
+    text-align: justify;
+    padding: 5%;
+    padding-left: 40px;
+    
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Ajusta el espacio entre el cuadro de check y la etiqueta de texto */
 }
 
 .small-input {
-    width: 150px; /* Ancho más pequeño para el campo de fecha */
+    width: 200px; /* Ancho más pequeño para el campo de fecha */
 }
 
 .fecha{
     text-align: left;
 }
 
-.form-group{
-    padding-top: 2%;
+.enviar{
+    text-align: center;
+    margin-right: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: 145px;
 }
-
 .btn-colore{
     color: #000000; /* Cambia el color del texto a tu elección */
     border-radius: 20px;
@@ -696,27 +842,41 @@ line-height: 124%; /* 24.8px */
     text-align: center;
 }
 .btn-colore:hover {
-    background-color: #000000; /* Cambia el color de fondo al pasar el mouse por encima */
+    background-color: #777777; /* Cambia el color de fondo al pasar el mouse por encima */
     color: white;
     border: 2px solid #6d6d6d; /* Cambia el color del borde al pasar el mouse por encima */
 }
 
+.form-controls{
+    width: 502px;
+
+}
+
+
 /*ventana emergente*/
-.form-check {
+.form-checks {
     text-align: justify;
     margin-top: 10px;
 }
 
 .confirmar1{
     text-align: center;
-    background-color: hsl(42, 65%, 68%);
+    color: #000000; /* Cambia el color del texto a tu elección */
+    border-radius: 20px;
+    background: #ffffff;
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left: 145px;
     
 }
 .confirmar1:hover {
-    background-color: #e6cb92; /* Cambia el color de fondo al pasar el mouse por encima */
+    background-color: #777777; /* Cambia el color de fondo al pasar el mouse por encima */
     color: white;
+    border: 2px solid #6d6d6d; /* Cambia el color del borde al pasar el mouse por encima */
 }
 
 .modal-body{
@@ -724,7 +884,10 @@ line-height: 124%; /* 24.8px */
 }
 
 .alert{
+    background-color: #fffdfd;
     text-align: justify;
+    color: #000;
+    
 }
 .window-notice {
     background: rgba(33, 41, 52, .85);
@@ -737,8 +900,8 @@ line-height: 124%; /* 24.8px */
     z-index: 999;
 }
 .window-notice .content {
-    background: #fff;
-    border-radius: 2px;
+    background: #f8ecb1e3; /* Color de fondo crema */
+    border-radius: 10px;
     box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
     box-sizing: content-box;
     display: flex;
@@ -751,4 +914,10 @@ line-height: 124%; /* 24.8px */
     width: 100%;
     padding: 2rem;
     font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+    .colorcrem {
+        padding: 10px !important;
+    }
 }

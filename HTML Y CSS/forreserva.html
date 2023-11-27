@@ -9,12 +9,12 @@
     
 
 </head>
-<body class="info"> 
+<body> 
     <div class="topbar">
         <div class="user-container">
             <img class="imagen-usuario" src="Male_User.png" alt="">
             <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
-            <img class="dropdown-usuario" src="Imagen/Arrow_drop_down.png" alt="">
+            <img class="dropdown-usuario" src="Arrow_drop_down.png" alt="">
         </div>
     </div>
     <div class="dropdown-menu">
@@ -29,32 +29,32 @@
         <div class="d-flex justify-content-between align-items-center mb-1">
             <div class="d-flex align-items-center">
                     <a href="javascript:history.back()">
-                    <img src="Imagen/flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
+                    <img src="flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
                 </a>
                 <h1 class="h1">Reservar</h1>
             </div>
         </div>
         </div>
-                <div class="container">
+                <div class="Reser">
                     <h1 class="text-center">Bienvenido a nuestra página de reservas</h1>
                     <p class="par">
                         Aquí podrás realizar reservas para una amplia gama de lugares. Estamos aquí para ayudarte a planificar tus experiencias culinarias de manera conveniente y sin complicaciones.
                     </p>
                 </div>
-                <form>
-                    <div class="container mt-5">
-                    <div class="row justify-content-center">
-                    <div class="col-md-6 custom-container">
+                <form class="var">
+                    <div class=" mt-5">
+                    <div class="form-groups justify-content-center">
+                    <div class="form-group col-md-6 custom-container">
                        <label class="fecha">Fecha:</label>
                         <input type="date" class="form-control small-input" id="fecha">
 
                     <div class="form-group">
-                        <label for="hora">Hora:</label>
+                        <label style="padding-top: 20px" for="hora">Hora:</label>
                         <input type="time" class="form-control small-input" id="hora">
 
                     <div class="form-group">
-                        <p>Cantidad de Personas:</p>
-                    <div class="form-check">
+                        <p style="padding-top: 20px; margin-bottom: 0px"> Cantidad de Personas:</p>
+                        <div class="form-check">
                         <input type="radio" class="form-check-input" id="unaPersona" name="cantidadPersonas" value="1">
                         <label class="form-check-label" for="unaPersona">1</label>
                     </div>
@@ -81,31 +81,36 @@
             <label class="form-check-label" for="dosPersonas">6</label>
          </div>
          <div class="form-group">
-            <p>Facilidades:</p>
+            <p style="padding-top: 20px; margin-bottom: 0px">Facilidades:</p>
+
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
             Sillas para niños
+            </label>
         </div>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
             Reservar Parking
+            </label>
         </div>
-        <div class="form-check">
+        <div style="padding-right: 0px" class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">
-            Asientos para Discapacitados
+            Asiento para Discapacitados
+            </label>
+            
         </div>
-        <div class=" form-group mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Comentarios Adicionales</label>
+        <div class="form-groups mb-3">
+            <label style="padding-top: 20px; margin-bottom: 0px; margin-right: 50px;" for="exampleFormControlTextarea1" class="form-label">Comentarios Adicionales</label>
             <small class="form-text text-muted">(Opcional)</small>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-controls" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
        
-                </div>
+            </div>
             <div class="text-center">
-                <a href="confirmar.html" class="btn btn-colore" style="margin-right: 20px">Enviar</a>
+                <a href="confirmar.html" class="enviar btn btn-colore" >Enviar</a>
             </div>
        </div>
     </div>
@@ -119,9 +124,9 @@
     <div class="social">
         <h1 class="panama">Panama Bites</h1>
         <div>
-            <img src="Imagen/Facebook.png" alt="">
-            <img src="Imagen/Instagram.png" alt="">
-            <img src="Imagen/Gmail.png" alt="">
+            <img src="Facebook.png" alt="">
+            <img src="Instagram.png" alt="">
+            <img src="Gmail.png" alt="">
         </div>
     </div>
     <div class="etc">
