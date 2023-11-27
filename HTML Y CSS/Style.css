@@ -211,19 +211,11 @@ nav{
 
 .busqueda-avanzada>ul{
     width: 100% !important;
-<<<<<<< HEAD
     height: 3rem !important;
     display: flex !important;
     flex-direction: row !important;
     padding-bottom: 3.25rem !important;
     padding-inline: 0.5rem !important;
-=======
-    height: 3rem;
-    display: flex !important;
-    flex-direction: row !important;
-    padding-bottom: 3.25rem !important;
-    padding-inline: 0.5rem;
->>>>>>> 818172ef9c882187e82ca34902b035fb74f05f22
 }
 
 
@@ -370,13 +362,9 @@ nav{
 
     flex-shrink: 0;
     color: #000;
+    font-family: Scope One;
     font-style: normal;
-<<<<<<< HEAD
     padding: auto;
-=======
-    font-family: 'Work Sans', sans-serif;
-   
->>>>>>> 818172ef9c882187e82ca34902b035fb74f05f22
 
 }
 .h4 {
@@ -385,16 +373,11 @@ nav{
     padding-top: 1%;
     flex-shrink: 0;
     color: #000;
-    font-family: 'Work Sans', sans-serif;
+    font-family: Scope One;
     font-style: normal;
     font-weight: 400;
     line-height: 124%; /* 43.4px */
-    
     }
-    
-strong{
-    font-family: 'Work Sans', sans-serif;
-}
     
     /* Estilos para hacer las imágenes circulares y ajustar el tamaño */
     
@@ -474,11 +457,7 @@ strong{
 }
 
 #logintit{
-<<<<<<< HEAD
     font-size: 50px;
-=======
-    font-size: 50px !important; 
->>>>>>> 818172ef9c882187e82ca34902b035fb74f05f22
     margin-bottom: -45px;
 }
 
@@ -548,7 +527,6 @@ header {
     margin-right: 41px;
     font-size: 18px;
     font-weight:normal;
-    text-align: center;
 }
 
 .sc{
@@ -588,7 +566,6 @@ header {
     margin-right: 6px;
 }
 
-<<<<<<< HEAD
 
 .sin-subrayado{
     font-size: 16px;
@@ -600,15 +577,6 @@ header {
  
 
 
-=======
-#contra{
-    font-size:16px ;
-    color: #424242;
-    font-style: italic;
-    margin-right: 50px;
-    
-}
->>>>>>> 818172ef9c882187e82ca34902b035fb74f05f22
 
 /*FIN DEL CSS DE PAGINA DE LOGIN*/
 
