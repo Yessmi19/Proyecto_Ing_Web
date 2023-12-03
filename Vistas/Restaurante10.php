@@ -2,38 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion del restaurante</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Style.css">
-    
-
+    <link rel="stylesheet" type="text/css" href="../Style.css">
 </head>
-<body class="info"> 
-    <div class="topbar">
-        <div class="user-container">
-            <img class="imagen-usuario" src="Male_User.png" alt="">
-            <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
-            <img class="dropdown-usuario" src="Arrow_drop_down.png" alt="">
-        </div>
-    </div>
-    <div class="dropdown-menu">
-        <ul>
-            <li><a href="">Ver reserva realizada</a></li>
-            <li><a href="Login.html">Iniciar sesión</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
-            <li>Salir</li>
-        </ul>
-    </div>
+
+
+<body>
+    
     <main class="conta text-center">
         <div class="d-flex justify-content-between align-items-center mb-1">
             <div class="d-flex align-items-center">
-                <a href="resultados.html">
-                    <img src="flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
+                <a href="Resultados.php">
+                    <img src="../Imagenes/flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
                 </a>
-                <h1 class="h1">Restaurante el sol</h1>
+                <h1 class="h1">Restaurante el Sol</h1>
             </div>
-            <a href="forreserva.html" class="btn btn-color">Reservar</a>
+
+            <a href="FormsReserva.php" class="btn btn-color" id="reservarBtn">Reservar</a>
         </div>
         <h4 class="h4">5 platos estrellas</h4>
         <section class="row justify-content-center">
@@ -42,7 +29,7 @@
                 <div class="image-caption">
                     <strong style="margin-top: auto;">Cappuccino Italiano</strong>
                 </div>
-                <a href="PDF/Menu.pdf" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
+                <a href="Menu.pdf" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
             </div>
             
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -78,7 +65,7 @@
                 <div class="row align-items-start"></div>
                     <div class="col-md-6 colorcrem">
                         <p><strong>Dirección:</strong> Calle de San Pablo, #456, Panamá</p>
-                        <p><strong>Ubicación:</strong> El Restaurante del Sol se encuentra en el centro de Ciudad Gastronómica, a pasos del mercado de alimentos frescos y rodeado de un ambiente cálido y acogedor.</p>
+                        <p><strong>Ubicación:</strong> Colón</p>
                         <p><strong>Teléfono:</strong> +123-456-1000</p>
                     </div>
                     <div class="col-md-6 colorcrem">

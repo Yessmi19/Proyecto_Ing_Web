@@ -716,7 +716,7 @@ header {
 
 /* Fin Nuevo Contenido */
 
-.containertop {
+.containers>div:first-child {
     display: flex;
     justify-content: space-around;
     border-top: 0.5rem solid white;
@@ -729,7 +729,7 @@ header {
     background-color: #F7E1AE;
     padding-top: 2rem;
 }
-.containerbottom {
+.containers>div:last-child {
     display: flex;
     justify-content: space-around;
     border-bottom: 0.5rem solid white;
@@ -920,4 +920,29 @@ padding-right: 5%;
     .colorcrem {
         padding: 10px !important;
     }
+}
+
+/*CSS DE VER RESERVAS*/
+.verres {
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ent {
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 10px;
+}
+
+.colocrem {
+    margin-bottom: 20px;
+    background-color: #FFEDC1;
+    padding: 20px !important;
+    text-align: justify;
 }

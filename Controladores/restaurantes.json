@@ -1,0 +1,145 @@
+[
+    {
+      "nombre": "Cafe de La Plaza",
+      "comida": [
+        "Internacional",
+        "Panameña"
+      ],
+      "res":"Café La Plaza es un encantador restaurante ubicado en el corazón de una pequeña ciudad",
+      "restaurante": "Cafetería",
+      "provincia": "Colón",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": false,
+      "discapacitados": true,
+      "parking": false
+    },
+    {
+      "nombre": "El Rancho",
+      "comida": [
+        "Panameña"
+      ],
+      "res":"Disfruta del sazón de la mejor cocina internacional, en el restaurante buffet El Rancho!",
+      "restaurante": "Fonda",
+      "provincia": "Coclé",
+      "costo": "Regular",
+      "sillas_bebe": false,
+      "menu_infantil": false,
+      "discapacitados": false,
+      "parking": true
+    },
+    {
+      "nombre": "La Hacienda Mexicana",
+      "comida": [
+        "Mexicana"
+      ],
+      "res":"Ubicada en un área céntrica, siéntete como en otro país al probar nuestra comida tradicional mexicana",
+      "restaurante": "Restaurante",
+      "provincia": "Panamá",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": true,
+      "discapacitados": false,
+      "parking": false
+    },
+    {
+      "nombre": "Starry Sky",
+      "comida": [
+        "Internacional"
+      ],
+      "res":"Starry Sky es una cafetería adornada de estrellas, siéntete como en un cuento con esta cafetería temática!",
+      "restaurante": "Cafetería",
+      "provincia": "Panamá",
+      "costo": "Costoso",
+      "sillas_bebe": true,
+      "menu_infantil": true,
+      "discapacitados": true,
+      "parking": false
+    },
+    {
+      "nombre": "SunSun Café",
+      "comida": [
+        "Internacional"
+      ],
+      "res":"SunSun Café es una preciosa cafetería temática basada en un popular grupo de cantantes!",
+      "restaurante": "Cafetería",
+      "provincia": "Panamá",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": false,
+      "discapacitados": true,
+      "parking": true
+    },
+    {
+      "nombre": "Freddys Family",
+      "comida": [
+        "Italiana"
+      ],
+      "res":"Sientente como en casa en Freddy's Pizzeria, un lugar donde la fantasía y la diversión se vuelven realidad!",
+      "restaurante": "Restaurante",
+      "provincia": "Darién",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": true,
+      "discapacitados": true,
+      "parking": true
+    },
+    {
+      "nombre": "Delicious Bistro",
+      "comida": [
+        "Internacional"
+      ],
+      "res":"Es un elegante restaurante especializado en comida gourmet que ofrece una experiencia culinaria excepcional. Situado en un ambiente acogedor y sofisticado",
+      "restaurante": "Cafetería",
+      "provincia": "Herrera",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": false,
+      "discapacitados": true,
+      "parking": true
+    },
+    {
+      "nombre": "Casa de Sabor",
+      "comida": [
+        "Panameña"
+      ],
+      "res":"Vuelve a tus raíces panameñas y disfruta la comida de nuestra querida patria",
+      "restaurante": "Restaurante",
+      "provincia": "Chiriquí",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": true,
+      "discapacitados": false,
+      "parking": false
+    },
+    {
+      "nombre": "Veggie Delights",
+      "comida": [
+        "Internacional",
+        "Panameña"
+      ],
+      "res":"Disfruta nuestras deliciosas comidas alternativas creadas 100% a base de productos no animales",
+      "restaurante": "Cafetería",
+      "provincia": "Veraguas",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": true,
+      "discapacitados": false,
+      "parking": false
+    },
+    {
+      "nombre": "El Sol",
+      "comida": [
+        "Italiana"
+      ],
+      "res":"El Restaurante del Sol es un lugar encantador que te transporta a un rincón gastronómico lleno de sabor y calidez",
+      "restaurante": "Cafetería",
+      "provincia": "Colón",
+      "costo": "Regular",
+      "sillas_bebe": true,
+      "menu_infantil": false,
+      "discapacitados": true,
+      "parking": true
+    }
+  ]
+  

@@ -5,68 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion del restaurante</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="../Style.css">
 </head>
-<body class="info"> 
-    <div class="topbar">
-        <div class="user-container">
-            <img class="imagen-usuario" src="Male_User.png" alt="">
-            <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
-            <img class="dropdown-usuario" src="Arrow_drop_down.png" alt="">
-        </div>
-    </div>
-    <div class="dropdown-menu">
-        <ul>
-            <li><a href="">Ver reserva realizada</a></li>
-            <li><a href="Login.html">Iniciar sesión</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
-            <li>Salir</li>
-        </ul>
-    </div>
+
+
+<body>
+    
     <main class="conta text-center">
         <div class="d-flex justify-content-between align-items-center mb-1">
             <div class="d-flex align-items-center">
-                <a href="resultados.html">
-                    <img src="flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
+                <a href="Resultados.php">
+                    <img src="../Imagenes/flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
                 </a>
-                <h1 class="h1">La Hacienda Mexicana</h1>
+                <h1 class="h1">Casa de Sabor</h1>
             </div>
-            <a href="forreserva.html" class="btn btn-color">Reservar</a>
+
+            <a href="FormsReserva.php" class="btn btn-color" id="reservarBtn">Reservar</a>
         </div>
         <h4 class="h4">5 platos estrellas</h4>
         <section class="row justify-content-center">
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="tacos.jpg" alt="Tacos al Pastor">
+                <img class="img-fluid img-circular" src="arrozguandu.jpg" alt="Arroz con Guandú y Pollo">
                 <div class="image-caption">
-                    <strong style="margin-top: auto;">Tacos al Pastor</strong>
+                    <strong style="margin-top: auto;">Arroz con Guandú y Pollo</strong>
                 </div>
-                <a href="PDF/Menú.pdf" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
+                <a href="Menú.pdf" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
             </div>
             
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="enchilada.jpg" alt="Enchiladas Suizas">
+                <img class="img-fluid img-circular" src="cevichecorvina.jpg" alt="Ceviche de Corvina">
                 <div class="image-caption">
-                    <strong style="margin-top: auto;">Enchiladas Suizas</strong>
-                </div>
-            </div>
-            
-            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="guacamole.jpg" alt="Guacamole Fresco">
-                <div class="image-caption">
-                    <strong style="margin-top: auto;">Guacamole Fresco</strong>
-                </div>
-            </div>
-            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="mole.jpg" alt="Mole Poblano">
-                <div class="image-caption">
-                    <strong style="margin-top: auto;">Mole Poblano</strong>
+                    <strong style="margin-top: auto;">Ceviche de Corvina</strong>
                 </div>
             </div>
             
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="tresleches.jpg" alt="Tres Leches de Cajeta">
+                <img class="img-fluid img-circular" src="sancocho.jpg" alt="Sancocho Panameño">
                 <div class="image-caption">
-                    <strong style="margin-top: auto;">Tres Leches de Cajeta</strong>
+                    <strong style="margin-top: auto;">Sancocho Panameño</strong>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <img class="img-fluid img-circular" src="ropavieja.jpg" alt="Ropa Vieja">
+                <div class="image-caption">
+                    <strong style="margin-top: auto;">Ropa Vieja</strong>
+                </div>
+            </div>
+            
+            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <img class="img-fluid img-circular" src="treslechescoco.jpg" alt="Tres Leches de Coco">
+                <div class="image-caption">
+                    <strong style="margin-top: auto;">Tres Leches de Cocos</strong>
                 </div>
             </div>
         </section> 
@@ -75,35 +64,34 @@
             <div class="row">
                 <div class="row align-items-start"></div>
                     <div class=" col-md-6 colorcrem ">
-                        <p><strong>Dirección:</strong> Calle Jalisco, Local 321, Ciudad Imaginaria, País de los Sueños</p>
-                        <p><strong>Ubicación:</strong> En el centro de la ciudad donde hay tranquilidad, San Felipe, encontrara el mejor restaurante de Panamá</p>
-                        <p><strong>Teléfono:</strong> +506 46603 289</p>
+                        <p><strong>Dirección:</strong> Calle del Aroma, Local 123, Ciudad Imaginaria, País de los Sueños</p>
+                        <p><strong>Ubicación:</strong> Chiriqui</p>
+                        <p><strong>Teléfono:</strong> +123-555-789</p>
                     </div>
                     <div class="col-md-6 colorcrem">
-                        <p><strong>Email:</strong> info@haciendamex.com</p>
-                        <p><strong>Sitio Web:</strong> <a href="https://www.instagram.com/haciendamex/" target="_blank">www.haciendamexicana.com</a></p>
-                        <p><strong>Horario:</strong> Lunes a Domingos: 11:00am – 11:00pm<br>
-                        </p>
+                        <p><strong>Email:</strong> info@casavor.com</p>
+                        <p><strong>Sitio Web:</strong> <a href="https://www.instagram.com/casavor/" target="_blank">www.casavor.com</a></p>
+                        <p><strong>Horario:</strong> Lunes a Domingos: 11:30am – 10:00pm<br></p>
                     </div>
                 </div>
             </div>
             <div class="info">
                 <div class="row">
                     <div class="col-md-6 p-3">
-                        <p>Tipo de Comida: Mexicana</p>
+                        <p>Tipo de Comida: Panameña</p>
                         <p>Tipo de Restaurante: Restaurante</p>
                         <p>Categoría de Costo: $$ (Regular)</p>
                     </div>
                     <div class="col-md-6 p-3">
                         <ul>
                             <p>Facilidades:</p><li>Menú infantil</li>
-                            <li>Sillas para bebés</li>
+                            <li>Sillas de bebé disponibles para familias con niños pequeños.</li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
         <footer class="footer">
             <div class="social">
                 <h1 class="panama">Panama Bites</h1>

@@ -5,68 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informacion del restaurante</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="../Style.css">
 </head>
+
+
 <body>
-    <div class="topbar">
-        <div class="user-container">
-            <img class="imagen-usuario" src="Male_User.png" alt="">
-            <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
-            <img class="dropdown-usuario" src="Arrow_drop_down.png" alt="">
-        </div>
-    </div>
-    <div class="dropdown-menu">
-        <ul>
-            <li><a href="">Ver reserva realizada</a></li>
-            <li><a href="Login.html">Iniciar sesión</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
-            <li>Salir</li>
-        </ul>
-    </div>
+    
     <main class="conta text-center">
         <div class="d-flex justify-content-between align-items-center mb-1">
             <div class="d-flex align-items-center">
-                <a href="resultados.html">
-                    <img src="flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
+                <a href="Resultados.php">
+                    <img src="../Imagenes/flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
                 </a>
-                <h1 class="h1">Cafe de La Plaza</h1>
+                <h1 class="h1">Freddys Family’s</h1>
             </div>
-            <a href="forreserva.html" class="btn btn-color">Reservar</a>
+
+            <a href="FormsReserva.php" class="btn btn-color" id="reservarBtn">Reservar</a>
         </div>
         <h4 class="h4">5 platos estrellas</h4>
         <section class="row justify-content-center">
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="caffe.jpg" alt="Affogato">
+                <img class="img-fluid img-circular" src="faz.jpg" alt="pizza faz">
                 <div class="image-caption">
-                    <strong style="margin-top: auto;">Affogato</strong>
+                    <strong style="margin-top: auto;">Pepperoni X-PRESS</strong>
                 </div>
-                <a href="PDF/Menú.pdf" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
+                <a href="Menú.pdf" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
             </div>
             
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="cafecho.jpg" alt="Imagen 2">
+                <img class="img-fluid img-circular" src="chica.jpg" alt="ensalada">
                 <div class="image-caption">
-                    <strong style="margin-top: auto;">Capuccino saborizado</strong>
-                </div>
-            </div>
-            
-            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="dulce.jpg" alt="Imagen 3">
-                <div class="image-caption">
-                    <strong style="margin-top: auto;">Tiramisú</strong>
-                </div>
-            </div>
-            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="dulce2.jpg" alt="Imagen 4">
-                <div class="image-caption">
-                    <strong style="margin-top: auto;">Macarons</strong>
+                    <strong style="margin-top: auto;">Ensalada Tailandesa de Pollo</strong>
                 </div>
             </div>
             
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="pan.webp" alt="Imagen 5">
+                <img class="img-fluid img-circular" src="foxy.jpg" alt="brownies">
                 <div class="image-caption">
-                    <strong style="margin-top: auto;">Tostadas francesas</strong>
+                    <strong style="margin-top: auto;">Brownies de Pirata</strong>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <img class="img-fluid img-circular" src="bonnie.jpg" alt="hamburgesa">
+                <div class="image-caption">
+                    <strong style="margin-top: auto;">Hamburgesa Suprema</strong>
+                </div>
+            </div>
+            
+            <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <img class="img-fluid img-circular" src="monty.jpg" alt="batido">
+                <div class="image-caption">
+                    <strong style="margin-top: auto;">Batido “Verde de Envidia”</strong>
                 </div>
             </div>
         </section> 
@@ -74,24 +63,23 @@
             <h3 class="text-left">Información del restaurante</h3>
             <div class="row">
                 <div class="row align-items-start"></div>
-                    <div class=" col-md-6 colorcrem">
-                        <p><strong>Dirección:</strong> Calle de la Plaza, 123, Ciudad Imaginaria, País de los Sueños</p>
-                        <p><strong>Ubicación:</strong> El Café de la Plaza se encuentra en el corazón de Ciudad Imaginaria, a solo unos pasos de la plaza principal y rodeado de hermosos jardines.</p>
-                        <p><strong>Teléfono:</strong> +123-456-7890</p>
+                    <div class=" col-md-6 colorcrem ">
+                        <p><strong>Dirección:</strong> Avenida del Sabor, Local 123</p>
+                        <p><strong>Ubicación:</strong> Darién</p>
+                        <p><strong>Teléfono:</strong> 833-578</p>
                     </div>
                     <div class="col-md-6 colorcrem">
-                        <p><strong>Email:</strong> info@cafedelaplaza.com</p>
-                        <p><strong>Sitio Web:</strong> <a href="https://www.instagram.com/cafeterialaplaza/" target="_blank">www.cafedelaplaza.com</a></p>
-                        <p><strong>Horario:</strong> Lunes a Viernes: 7:00 AM - 8:00 PM<br>
-                            Sábados y Domingos: 8:00 AM - 6:00 PM</p>
+                        <p><strong>Email:</strong> info@fazent.com</p>
+                        <p><strong>Horario:</strong> Lunes a Viernes: 11:00 AM - 11:00 PM<br>
+                            Sábados y Domingos: 12:00 AM - 10:00 PM</p>
                     </div>
                 </div>
-            </div>
+              </div>
             <div class="info">
                 <div class="row">
                     <div class="col-md-6 p-3">
-                        <p>Tipo de Comida: Internacional y Panameña</p>
-                        <p>Tipo de Restaurante: Cafetería</p>
+                        <p>Tipo de Comida: Italiana</p>
+                        <p>Tipo de Restaurante: Restaurante</p>
                         <p>Categoría de Costo: $$ (Regular)</p>
                     </div>
                     <div class="col-md-6 p-3">
@@ -99,10 +87,11 @@
                             <p>Facilidades:</p><li>Sillas de bebé disponibles para familias con niños pequeños.</li>
                             <li>Accesible para personas con discapacidad móvil con rampas de acceso.</li>
                             <li>Amplio estacionamiento en las cercanías.</li>
+                            <li>Menú Infantil para mayor diversión.</li>
                         </ul>
                     </div>
                 </div>
-        </div>
+           </div>
         </section>
     </main>
         <footer class="footer">
@@ -113,7 +102,7 @@
                     <img src="Instagram.png" alt="">
                     <img src="Gmail.png" alt="">
                 </div>
-            </div> 
+            </div>
             <div class="etc">
                 <h6>Política de privacidad</h6>
                 <h6>Política de cookies</h6>

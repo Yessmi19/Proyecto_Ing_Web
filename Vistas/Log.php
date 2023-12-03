@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,29 +14,36 @@
     </header>
     <section class="d-flex justify-content-center mt-5">
         <div class="cuadrolo rounded-4 border p-4">
-            <a href="index.html">
+            <a href="index.php">
                 <img src="flechaderecha.png" alt="Icono de derecha" id="flecha">
             </a>
-            <span class="text-center">Inicio de Sesión<span>
-            <form>
+            <span class="text-center">Inicio de Sesión</span>
+           
+           <?php
+            // Mostrar el mensaje de error si existe
+            if(isset($_GET['error'])) {
+                echo '<p style="color:red;">Credenciales incorrectas. Inténtalo de nuevo.</p>';
+            }
+            ?>
+            
+            <form action="login.php" method="post">
                 <div class="mb-3 sc">
-                    <label for="nomco" class="form-label">Nombre de Usuario o correo electronico:</label>
-                    <input type="text" class="form-control" id="nomco" name="nomcor">
+                    <label for="username" class="form-label">Nombre de Usuario:</label>
+                    <input type="text" class="form-control" id="username" name="username">
                 </div>
                 <div class="mb-3 sc">
-                    <label for="con" class="form-label">Contraseña:</label>
-                    <input type="password" class="form-control" id="con" name="cont">
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <input type="password" class="form-control" id="password" name="password">
                 </div>
              
-                <a href=""><p class="sin-subrayado" >¿Olvidaste tu contraseña?</p></a>
-                <a href="Registro.html"><p  class="sin-subrayado" >¿No tienes cuenta? ¡Crea una ahora!</p></a>
+                <a href=""><p class="sin-subrayado">¿Olvidaste tu contraseña?</p></a>
+                <a href="Registro.html"><p class="sin-subrayado">¿No tienes cuenta? ¡Crea una ahora!</p></a>
     
                 <button type="submit" class="btn btn-primary color">Acceder</button>
             </form>
         </div>
     </section>
     <footer>
-
     </footer>
 </body>
 </html>

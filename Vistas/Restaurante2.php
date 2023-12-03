@@ -12,24 +12,44 @@
 <body class="info"> 
     <div class="topbar">
         <div class="user-container">
-            <img class="imagen-usuario" src="Male_User.png" alt="">
-            <h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>
-            <img class="dropdown-usuario" src="Arrow_drop_down.png" alt="">
+            <img class="imagen-usuario" src="../Imagenes/Male_User" alt="">
+            <?php
+                session_start(); // Inicia la sesión si no se ha iniciado
+                if (isset($_SESSION['username'])) {
+                    echo '<h4 class="nombre-usuario unselectable-text">' . $_SESSION['username'] . '</h4>';
+                } else {
+                    echo '<h4 class="nombre-usuario unselectable-text">Nombre usuario</h4>';
+                }
+                ?>
+            <img class="dropdown-usuario" src="../Imagenes/Arrow_drop_down.png" alt="">
         </div>
     </div>
-    <div class="dropdown-menu">
-        <ul>
-            <li><a href="">Ver reserva realizada</a></li>
-            <li><a href="Login.html">Iniciar sesión</a></li>
-            <li><a href="Registro.html">Registrarse</a></li>
-            <li>Salir</li>
-        </ul>
-    </div>
+     <div class="dropdown-menu">
+    <ul>
+        <?php
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start(); // Inicia la sesión solo si no está activa
+        }
+        
+
+        // Verifica si el usuario ha iniciado sesión
+        if (isset($_SESSION['username'])) {
+            // Usuario ha iniciado sesión
+            echo '<li><a class="usuario-font" href="ver_reservas.php">Ver reservas</a></li>';
+            echo '<li><a class="usuario-font" href="cerrar_sesion.php">Cerrar sesión</a></li>';
+        } else {
+            // Usuario no ha iniciado sesión
+            echo '<li><a class="usuario-font" href="Log.php">Iniciar sesión</a></li>';
+            echo '<li><a class="usuario-font" href="Registro.html">Registrarse</a></li>';
+        }
+        ?>
+    </ul>
+</div>
     <main class="conta text-center">
         <div class="d-flex justify-content-between align-items-center mb-1">
             <div class="d-flex align-items-center">
-                <a href="resultados.html">
-                    <img src="flechaderecha.png" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
+                <a href="Resultados.php">
+                    <img src="../Imagenes/flechaderecha" alt="Icono de derecha" class="fle"><!-- Ícono de flecha de regreso -->
                 </a>
                 <h1 class="h1">El Rancho</h1>
             </div>
@@ -37,34 +57,34 @@
         <h4 class="h4">5 platos estrellas</h4>
         <section class="row justify-content-center">
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="sopadelenteja.jpg" alt="Sopa de lentejas">
+                <img class="img-fluid img-circular" src="../Imagenes/sopadelenteja.jpg" alt="Sopa de lentejas">
                 <div class="image-caption">
                     <strong style="margin-top: auto;">Sopa de Lenteja</strong>
                 </div>
-                <a href="" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
+                <a href="../Menú.pdf" class="btn btn-custom btn-sm download-button">Descargar Menú</a>
             </div>
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="sancochodepollo.jpg" alt="Sancocho de pollo">
+                <img class="img-fluid img-circular" src="../Imagenes/sancocho.jpg" alt="Sancocho de pollo">
                 <div class="image-caption">
                     <strong style="margin-top: auto;">Sancocho</strong>
                 </div>
             </div>
             
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="desayunotradicional.jpg" alt="Desayuno Tradi">
+                <img class="img-fluid img-circular" src="../Imagenes/desayunotradicional.jpg" alt="Desayuno Tradi">
                 <div class="image-caption">
                     <strong style="margin-top: auto;">Desayuno tradicional</strong>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="Tocinete.jpg" alt="Tocinete">
+                <img class="img-fluid img-circular" src="../Imagenes/Tocinete.jpg" alt="Tocinete">
                 <div class="image-caption">
                     <strong style="margin-top: auto;">Tocinete</strong>
                 </div>
             </div>
             
             <div class="col col-md-4 col-lg-2 mb-3" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-                <img class="img-fluid img-circular" src="cafeconleche.jpg" alt="Cafe con leche">
+                <img class="img-fluid img-circular" src="../Imagenes/cafeconleche.jpg" alt="Cafe con leche">
                 <div class="image-caption">
                     <strong style="margin-top: auto;">Cafe con leche</strong>
                 </div>
@@ -76,7 +96,7 @@
                 <div class="row align-items-start"></div>
                     <div class=" col-md-6 colorcrem ">
                         <p><strong>Dirección:</strong>Calle Frasci #123, Herrera, Panamá </p>
-                        <p><strong>Ubicación:</strong> Se encuentra en el corazón Herrera, a solo unos pasos de la plaza principal y rodeado de hermosos jardines.</p>
+                        <p><strong>Ubicación:</strong> Coclé</p>
                         <p><strong>Teléfono:</strong> +134 8782 432</p>
                     </div>
                     <div class="col-md-6 colorcrem">
@@ -103,15 +123,14 @@
         </div>
     </section>
 </main>
-        <footer class="footer">
+<footer class="footer">
             <div class="social">
                 <h1 class="panama">Panama Bites</h1>
                 <div>
-                    <img src="Facebook.png" alt="">
-                    <img src="Instagram.png" alt="">
-                    <img src="Gmail.png" alt="">
+                    <img src="../Imagenes/Instagram.png" alt="">
+                    <img src="../Imagenes/Gmail.png" alt="">
                 </div>
-            </div>
+            </div> 
             <div class="etc">
                 <h6>Política de privacidad</h6>
                 <h6>Política de cookies</h6>
