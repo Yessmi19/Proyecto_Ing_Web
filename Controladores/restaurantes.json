@@ -12,7 +12,8 @@
       "sillas_bebe": true,
       "menu_infantil": false,
       "discapacitados": true,
-      "parking": false
+      "parking": false,
+      "indice":"1"
     },
     {
       "nombre": "El Rancho",
@@ -26,7 +27,8 @@
       "sillas_bebe": false,
       "menu_infantil": false,
       "discapacitados": false,
-      "parking": true
+      "parking": true,
+      "indice":"2"
     },
     {
       "nombre": "La Hacienda Mexicana",
@@ -40,7 +42,8 @@
       "sillas_bebe": true,
       "menu_infantil": true,
       "discapacitados": false,
-      "parking": false
+      "parking": false,
+      "indice":"3"
     },
     {
       "nombre": "Starry Sky",
@@ -54,7 +57,8 @@
       "sillas_bebe": true,
       "menu_infantil": true,
       "discapacitados": true,
-      "parking": false
+      "parking": false,
+      "indice":"4"
     },
     {
       "nombre": "SunSun Café",
@@ -68,7 +72,8 @@
       "sillas_bebe": true,
       "menu_infantil": false,
       "discapacitados": true,
-      "parking": true
+      "parking": true,
+      "indice":"5"
     },
     {
       "nombre": "Freddys Family",
@@ -82,7 +87,8 @@
       "sillas_bebe": true,
       "menu_infantil": true,
       "discapacitados": true,
-      "parking": true
+      "parking": true,
+      "indice":"6"
     },
     {
       "nombre": "Delicious Bistro",
@@ -96,7 +102,8 @@
       "sillas_bebe": true,
       "menu_infantil": false,
       "discapacitados": true,
-      "parking": true
+      "parking": true,
+      "indice":"7"
     },
     {
       "nombre": "Casa de Sabor",
@@ -110,7 +117,8 @@
       "sillas_bebe": true,
       "menu_infantil": true,
       "discapacitados": false,
-      "parking": false
+      "parking": false,
+      "indice":"8"
     },
     {
       "nombre": "Veggie Delights",
@@ -125,7 +133,8 @@
       "sillas_bebe": true,
       "menu_infantil": true,
       "discapacitados": false,
-      "parking": false
+      "parking": false,
+      "indice":"9"
     },
     {
       "nombre": "El Sol",
@@ -139,7 +148,8 @@
       "sillas_bebe": true,
       "menu_infantil": false,
       "discapacitados": true,
-      "parking": true
+      "parking": true,
+      "indice":"10"
     }
   ]
   

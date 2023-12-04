@@ -280,14 +280,14 @@
             ?>
 
                 <div class="box">
-                    <img src="rest<?php echo $indice + 1 ?>.jpg" alt="Restaurante <?php echo $indice + 1 ?>">
+                    <img src="rest<?php echo $restaurante["indice"] ?>.jpg" alt="Restaurante <?php echo $restaurante["indice"] ?>">
                     <h2>
                         <?php echo $restaurante["nombre"] ?>
                     </h2>
                     <p>
                         <?php echo $restaurante["res"] ?>
                     </p>
-                    <a href="Restaurante<?php echo $indice + 1 ?>.php"> Más Informacion...</a>
+                    <a href="Restaurante<?php echo $restaurante["indice"] ?>.php"> Más Informacion...</a>
                 </div>
                 <?php
 
